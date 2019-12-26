@@ -1,0 +1,17 @@
+int g0 = 10;
+int fun(int g0) {
+if(g0==1)
+	return 1;
+else
+    return g0*fun(g0-1);
+}
+int main() {
+    print(fun(g0));
+while(g0>=0)
+g0=g0-1;
+if(g0<5)
+print(g0,10-g0);
+else
+print(0);
+return 1;
+}
